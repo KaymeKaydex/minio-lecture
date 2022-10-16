@@ -638,7 +638,20 @@ minio-lecture-nginx-1   | 192.168.176.1 - - [16/Oct/2022:13:13:13 +0000] "GET /a
 Мы создали наш первый бакет. Давайте загрузим в него какой-нибудь файл. Нажимаем на upload.
 
 ![Создание проекта](docs/12.png)
-Файл успешно загружен. 
-Нажмите на него левой кнопкой мыши чтобы открыть плашку справа. В ней мы нажмем на кнопку share
+Файл успешно загружен.
+Нажмите на шестеренку и в настройках бакета сделайте ему паблик полиси.
+Нажмите на файл левой кнопкой мыши чтобы открыть плашку справа. В ней мы нажмем на кнопку share.
+Там сгенерировалась ссылка подобного вида:
+```shell
+http://192.168.208.4:9000/test/b46xpy.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=HEK3NFWVQ28UQ5PVU0EN%2F20221016%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20221016T145908Z&X-Amz-Expires=604800&X-Amz-Security-Token=eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJhY2Nlc3NLZXkiOiJIRUszTkZXVlEyOFVRNVBWVTBFTiIsImV4cCI6MTY2NTkzNTkwNCwicGFyZW50IjoibWluaW8ifQ.e9dMHTmnk_Hq83Zo_o0EtQ5LBdRwVZaAkrDhtQiB72dKGwdSPIePX1GDVvyFWRWlCJwSPQoinMBFlcjkRO8YIg&X-Amz-SignedHeaders=host&versionId=bbd197a2-1526-44a6-be74-aea5b0bd323d&X-Amz-Signature=186dddb381e8bb53638b6fc98ac296a0cf5a58e3d24c50d7162e1fb7c4c59f1c
+```
+Превратим ее в:
+```shell
+http://127.0.0.1:9000/test/b46xpy.jpg
+```
+Зайдем на этот адрес и увидим нашу картинку:
+![Создание проекта](docs/13.png)
+
 ## Этап №2
+
 
